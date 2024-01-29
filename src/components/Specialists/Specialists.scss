@@ -1,0 +1,52 @@
+.specialists {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+
+    * {
+        overflow-y: hidden;
+    }
+
+    .specialist-items {
+        width: 100%;
+        flex-wrap: wrap;
+
+        .specialist-item {
+            width: 25%;
+            height: 160px;
+            flex-direction: column;
+
+            img,
+            p {
+                cursor: pointer;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            &:hover {
+                p {
+                    font-weight: 800;
+                    border-bottom: 4px solid #6F2877;
+                    transition: all ease .2s;
+                }
+            }
+        }
+    }
+}
+
+/* Responsive on 650px */
+@media (max-width : 650px) {
+    .specialists {
+        height: 100%;
+
+        .specialist-items {
+            .specialist-item {
+                width: 180px;
+                height: 200px;
+            }
+        }
+    }
+}
