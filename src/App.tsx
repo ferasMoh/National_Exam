@@ -14,7 +14,7 @@ function App() {
   const token = false;
   return (
     <>
-      <Router>
+      <Router basename="National_Exam">
         <Routes>
           <Route path="/" element={!token ? <HomeBeforeLogin /> : <Home />} />
           <Route path="/login" element={<Login />} />
